@@ -29,7 +29,7 @@ namespace Coronavirus.Helpers
 
         public void SetCulture(CultureInfo language)
         {
-            language = new CultureInfo("tr-TR");    //TODO: aarslan yönetilebilir olmalı
+            language = new CultureInfo("tr-TR");    //TODO:aarslan yönetilebilir olmalı
             Thread.CurrentThread.CurrentUICulture = language;
             AppResources.Culture = language;
             Preferences.Set(LanguageKey, language.TwoLetterISOLanguageName);
