@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Coronavirus.App">
+    <Application.Resources>
+        <ResourceDictionary>
+          <!-- Oluşturulan Style' ın hangi kontrol tipinde kullanılacağı bilgisini verir -->
+          <Style x:Key="labelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="Red"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+          </Style>
+          <Style x:Key="labelFont" TargetType="Label" BasedOn="{StaticResource labelStyle}">
+            <Setter Property="FontAttributes" Value="Italic"/>
+            </Style>
+          <!-- Start Default Theme Resources -->
+          <Style TargetType="Label" x:Key="labelStyler">
+            <Setter Property="FontSize" Value="35"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="TextColor" Value="Red"></Setter>
+            <Setter Property="VerticalOptions" Value="Start"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+          </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

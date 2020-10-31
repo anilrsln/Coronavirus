@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Coronavirus.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="ALL TIME STATS" HorizontalTextAlignment="Center" TextColor="White" FontSize="Large" />
+        </Frame>
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
+                <Label x:Name="labelAffectedCountries" Text="Etkilenen Ülke Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelPopulation" Text="Dünya Nüfusu" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelCases" Text="Toplam Vaka Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelDeath" Text="Toplam Ölüm Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelRecovered" Text="Toplam İyileşen Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelActive" Text="Toplam Aktif Hasta Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/> 
+                <Label x:Name="labelCritical" Text="Toplam Kritik Hasta Sayısı" HorizontalTextAlignment="Start" FontSize="Medium"/>
+            </StackLayout>
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
+                <Label x:Name="labelAffectedCountriesNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelPopulationNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelCasesNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelDeathNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelRecoveredNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelActiveNum" HorizontalTextAlignment="End" FontSize="Medium"/> 
+                <Label x:Name="labelCriticalNum" HorizontalTextAlignment="End" FontSize="Medium"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
