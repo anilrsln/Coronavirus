@@ -12,12 +12,15 @@
             <Setter Property="FontAttributes" Value="Italic"/>
             </Style>
           <!-- Start Default Theme Resources -->
-          <Style TargetType="Label" x:Key="labelStyler">
-            <Setter Property="FontSize" Value="35"></Setter>
-            <Setter Property="FontAttributes" Value="Bold"></Setter>
-            <Setter Property="TextColor" Value="Red"></Setter>
-            <Setter Property="VerticalOptions" Value="Start"></Setter>
-            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+          <Style TargetType="Label" x:Key="labelWorldWideStatsTagStyler">
+            <Setter Property="FontSize" Value="Medium"></Setter>
+            <Setter Property="TextColor" Value="Black"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+          </Style>
+          <Style TargetType="Label" x:Key="labelWorldWideStatsValueStyler">
+            <Setter Property="FontSize" Value="Medium"></Setter>
+            <Setter Property="TextColor" Value="Black"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="End"></Setter>
           </Style>
         </ResourceDictionary>
     </Application.Resources>
