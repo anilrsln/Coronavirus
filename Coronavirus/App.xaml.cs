@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Coronavirus.Resources;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Coronavirus
 {
@@ -9,8 +9,12 @@ namespace Coronavirus
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            
+            AppResources.Culture = new System.Globalization.CultureInfo("tr-TR");
+            /*
+            CultureInfo.CurrentCulture = new CultureInfo("tr-TR", false);
+            CultureInfo.CurrentUICulture = new CultureInfo("tr-TR", false);
+            */
         }
 
         protected override void OnStart()
