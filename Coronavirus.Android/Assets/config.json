@@ -1,0 +1,11 @@
+﻿{
+  "endpoint": {
+    "baseUrl": "https://corona.lmao.ninja/",
+    "getAllUrl": "https://corona.lmao.ninja/v3/covid-19/all",
+    "getCountriesUrl": "https://corona.lmao.ninja/v2/countries?sort=country"
+  },
+  "credential": {
+    "username": "anilrsln@gmail.com",
+    "password": "anilrsln"
+  }
+}

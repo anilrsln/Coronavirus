@@ -18,13 +18,15 @@ namespace Coronavirus
 
         protected override void OnAppearing()
         {
-            try {
+            try
+            {
                 WorldwideStats result = new WorldwideStats();
                 var tt = Task.Run(async delegate {
                     result = await manager.Get(Constraints.GetAllUrl, "/");
                 });
                 tt.Wait();
-                if (result != null) {
+                if (result != null)
+                {
                     labelAffectedCountriesNum.Text = result.AffectedCountries.ToString();
                     labelPopulationNum.Text = result.Population.ToString();
                     labelCasesNum.Text = result.Cases.ToString();
@@ -33,7 +35,8 @@ namespace Coronavirus
                     labelActiveNum.Text = result.Active.ToString();
                     labelCriticalNum.Text = result.Critical.ToString();
                 }
-            } catch(Exception ex) {
+            }
+            catch(Exception ex) {
 
             }
         }
